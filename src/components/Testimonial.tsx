@@ -1,18 +1,47 @@
 import React from 'react';
-import './testimonial.css'
 import {Avatar} from "./Avatar";
+import styled from "@emotion/styled";
 
-export const Testimonial = ({}) => {
+interface TestimonialProps {
+    avatar: string;
+    name: string;
+    role: string;
+    message: string;
+}
+
+const StyledTestimonial = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 88px rgba(0, 0, 0, 0.05);
+  padding: 32px 13px 32px 32px;
+
+  .message {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 156.5%;
+    letter-spacing: 0.02em;
+
+    color: #ACACAC;
+  }
+`
+export const Testimonial = ({
+                                avatar = 'https://avatars.githubusercontent.com/u/97145056?v=4',
+                                name = 'Abdur Rehman',
+                                role = 'React Engineer',
+                                message = ''
+                            }: TestimonialProps) => {
     return (
-        <div className="container-1">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam consequuntur culpa dolorum, fuga
-                hic ipsa itaque nesciunt perspiciatis porro possimus ratione saepe sint tempore, totam. Ad cum eius
-                similique!
-            </div>
+        <StyledTestimonial>
+            <p className="message">“{message}”
+            </p>
             <div>
-                <Avatar avatar={'https://avatars.githubusercontent.com/u/97145056?v=4'} name={'Abdur Rehman'}
-                        role={'React Engineer'}/>
+                <Avatar avatar={avatar} name={name}
+                        role={role}/>
             </div>
-        </div>
+        </StyledTestimonial>
     );
 };
