@@ -1,0 +1,7 @@
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    background: royalblue;
+    box-shadow: 0px 4px 88px rgba(0, 0, 0, 0.05);
+}
