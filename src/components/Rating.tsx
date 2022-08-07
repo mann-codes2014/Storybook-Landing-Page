@@ -20,6 +20,9 @@ const StyledRating = styled.div`
     &.off {
       color: ${COLORS.LIGHT_ORANGE};
     }
+    .star{
+      font-size: 16px;
+    }
   }
 `
 
