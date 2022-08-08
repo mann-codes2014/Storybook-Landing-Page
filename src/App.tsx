@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import {Track} from "./components/Track";
 
 function App() {
     return (
         <div className="App">
-            <Track/>
+            {/*<Track/>*/}
         </div>
     );
 }
