@@ -16,6 +16,7 @@ const StyledTestimonial = styled.div`
   background: #FFFFFF;
   box-shadow: 0 4px 88px rgba(0, 0, 0, 0.05);
   padding: 32px 13px 32px 32px;
+  margin: 5px;
 
   .message {
     font-family: 'Roboto', sans-serif;

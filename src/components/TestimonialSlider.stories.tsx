@@ -46,7 +46,24 @@ Default.args = {
             'the master-builder of human happiness. \n' +
             'no one rejects,dislikes, or avoids pleasure \n' +
             'itself, pleasure itself'
-    }]
+    },
+        {
+            avatar: 'https://avatars.githubusercontent.com/u/97145056?v=4',
+            name: 'Ishtiaq Ismail',
+            role: 'Government Officer',
+            message: 'Teachings of the great explore of truth, \n' +
+                'the master-builder of human happiness. \n' +
+                'no one rejects,dislikes, or avoids pleasure \n' +
+                'itself, pleasure itself'
+        }, {
+            avatar: 'https://avatars.githubusercontent.com/u/97145056?v=4',
+            name: 'Raja Ammad',
+            role: 'Data Scientist',
+            message: 'Teachings of the great explore of truth, \n' +
+                'the master-builder of human happiness. \n' +
+                'no one rejects,dislikes, or avoids pleasure \n' +
+                'itself, pleasure itself'
+        }]
 };
 Default.parameters = {
     backgrounds: {default: 'light'},
