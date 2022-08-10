@@ -2,7 +2,7 @@ import React from 'react';
 import {Avatar} from "./Avatar";
 import styled from "@emotion/styled";
 
-interface TestimonialProps {
+export interface TestimonialProps {
     avatar: string;
     name: string;
     role: string;

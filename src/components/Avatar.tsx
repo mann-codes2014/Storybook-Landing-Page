@@ -38,7 +38,7 @@ const StyledAvatar = styled.div`
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 150px;
+    width: 250px;
   }
 
   .role {
