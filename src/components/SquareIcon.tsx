@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 interface SquareIconProps {
     backgroundColor: string;
     children: any
+    className?: string
 }
 
 interface StyledSquareIconProps {
@@ -14,7 +15,7 @@ const StyledSquareIcon = styled.div<StyledSquareIconProps>`
   width: fit-content;
   border-radius: 23px;
   padding: 10px;
-  position: absolute;
+  position: relative;
   background-color: ${props => props.backgroundColor};
   height: auto;
 
@@ -25,10 +26,11 @@ const StyledSquareIcon = styled.div<StyledSquareIconProps>`
 `
 export const SquareIcon = ({
                                backgroundColor,
-                               children
+                               children,
+                               className = ''
                            }: SquareIconProps) => {
     return (
-        <StyledSquareIcon backgroundColor={backgroundColor}>
+        <StyledSquareIcon className={className} backgroundColor={backgroundColor}>
             <div>{children}</div>
         </StyledSquareIcon>
     );

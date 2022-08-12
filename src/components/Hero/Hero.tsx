@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import {IMAGES} from "../../assets";
 import Navbar from "./Navbar";
 import Input from "../Input";
+import {Banner} from "./Banner";
 
 type StyledContainerProps = {
     layer1: string;
@@ -107,15 +108,22 @@ export const Hero = () => {
                     <StyledMissionStatement>Elearn is a global training provider based across the UK that specialises in
                         accredited and bespoke
                         training courses. We crush the...</StyledMissionStatement>
-                        <Input/>
+                    <Input/>
                 </StyledSection>
                 <div>
                     <img className="layer3" src={IMAGES.heroBackgroundLayer3} alt=""/>
                     <img className="layer4" src={IMAGES.heroBackgroundLayer4} alt=""/>
                 </div>
             </StyledBodyContainer>
-
-
+            <div style={{
+                left: '8%',
+                right: '8%',
+                bottom: '-100px',
+                position: 'absolute',
+                // transform: 'translateX(-30%)'
+            }}>
+                <Banner/>
+            </div>
             <Navbar className={'navbar'}/>
         </StyledContainer>
     );
