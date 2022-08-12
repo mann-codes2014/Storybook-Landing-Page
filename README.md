@@ -6,6 +6,7 @@ Figma is developed by [https://codeflashinfotech.com/](https://codeflashinfotech
 
 React App [Demo](https://storybook-landing-page-app.netlify.app/)
 
+Storybook is available [here](https://main--62ee1b2a12c78f7bbe1e5a9b.chromatic.com)
 ## Available Scripts
 
 In the project directory, you can run:
@@ -17,3 +18,4 @@ Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
 ## <span style="color:red">Known Issues</span>
 1. Responsiveness (Will be fixed once desktop version is ready)
+2. Images loading takes time
