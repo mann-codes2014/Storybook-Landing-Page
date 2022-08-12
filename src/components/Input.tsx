@@ -31,12 +31,14 @@ const StyledInput = styled.input<any>`
   }
 
 `
-type InputProps={}
-export const Input = ({}:InputProps) => {
+type InputProps={
+    placeholder?:string
+}
+export const Input = ({placeholder='Search for a location...'}:InputProps) => {
     return (
         <StyledInputContainer>
             <StyledIcon src={svg}/>
-            <StyledInput type="text" placeholder='Search for a location...'/>
+            <StyledInput type="text" placeholder={placeholder}/>
             <Button label="Continue" primary/>
         </StyledInputContainer>
     );

@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import {Track, TrackProps} from "./Track";
 
 const StyledTrackList = styled.div`
+  padding: 15px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px

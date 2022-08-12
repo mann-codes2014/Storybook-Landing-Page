@@ -93,6 +93,12 @@ const StyledMissionStatement = styled.p`
   font-size: 16px;
   color: #8A8A8A;
 `
+const StyledBannerContainer = styled.div`
+  left: 8%;
+  right: 8%;
+  bottom: -100px;
+  position: absolute;
+`
 export const Hero = () => {
     return (
         <StyledContainer layer1={IMAGES.heroBackgroundLayer1} layer2={IMAGES.heroBackgroundLayer2}
@@ -115,15 +121,9 @@ export const Hero = () => {
                     <img className="layer4" src={IMAGES.heroBackgroundLayer4} alt=""/>
                 </div>
             </StyledBodyContainer>
-            <div style={{
-                left: '8%',
-                right: '8%',
-                bottom: '-100px',
-                position: 'absolute',
-                // transform: 'translateX(-30%)'
-            }}>
+            <StyledBannerContainer>
                 <Banner/>
-            </div>
+            </StyledBannerContainer>
             <Navbar className={'navbar'}/>
         </StyledContainer>
     );

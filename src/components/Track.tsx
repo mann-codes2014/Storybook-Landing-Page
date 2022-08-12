@@ -10,7 +10,7 @@ type StyledTrackProps = {
     backgroundImage: string;
 }
 const StyledTrack = styled.div<StyledTrackProps>`
-  width: 490px;
+  width: auto;
   position: relative;
   background: #FFFFFF;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
