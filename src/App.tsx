@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
+import Hero from "./components/Hero/Hero";
+import styled from "@emotion/styled";
+
+const StyledContainer = styled.div`
+  padding: 0;
+`
 
 function App() {
     return (
-        <div className="App">
-            {/*<Track/>*/}
-        </div>
+        <StyledContainer>
+            <Hero/>
+        </StyledContainer>
     );
 }
 

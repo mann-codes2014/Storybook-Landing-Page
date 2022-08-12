@@ -1,5 +1,9 @@
 export const IMAGES = {
     exam: require('../assets/icons/exam.svg'),
+    heroBackgroundLayer1: require('../assets/images/hero-background-layer-1.png'),
+    heroBackgroundLayer2: require('../assets/images/hero-background-layer-2.png'),
+    heroBackgroundLayer3: require('../assets/images/hero-background-layer-3.png'),
+    heroBackgroundLayer4: require('../assets/images/hero-background-layer-4.png'),
     track: require('../assets/images/track.png'),
     track2: require('../assets/images/track-2.png'),
     track3: require('../assets/images/track-3.png'),

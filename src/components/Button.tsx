@@ -26,6 +26,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   background-color: ${props => (props.primary ? COLORS.PRIMARY : COLORS.SECONDARY)};
   font-size: ${props => (props.size === 'large' ? '16px' : props.size === 'medium' ? '14px' : '12px')};
   padding: ${props => (props.size === 'large' ? '12px 24px' : props.size === 'medium' ? '11px 20px' : '10px 16px')};
+  height: 100%;
 
   &:hover {
     outline: 3px solid ${props => (props.primary ? COLORS.PRIMARY : COLORS.SECONDARY)};
