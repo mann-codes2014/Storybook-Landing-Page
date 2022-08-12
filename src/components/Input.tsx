@@ -31,7 +31,8 @@ const StyledInput = styled.input<any>`
   }
 
 `
-export const Input = ({}) => {
+type InputProps={}
+export const Input = ({}:InputProps) => {
     return (
         <StyledInputContainer>
             <StyledIcon src={svg}/>
