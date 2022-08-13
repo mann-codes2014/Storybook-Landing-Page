@@ -19,3 +19,4 @@ Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 ## <span style="color:red">Known Issues</span>
 1. Responsiveness (Will be fixed once desktop version is ready)
 2. Images loading takes time
+3. Fix hardcoded strings to localized ones

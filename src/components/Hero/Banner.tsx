@@ -12,7 +12,7 @@ const StyledContainer = styled.div`
   background: #4D2C5E;
   border-radius: 14px;
 `
-const StyledItem = styled.div`
+export const StyledItem = styled.div`
   display: grid;
   grid-template-areas: ' icon title       title'
                          'icon description description'
