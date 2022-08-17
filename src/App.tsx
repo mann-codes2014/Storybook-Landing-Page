@@ -4,6 +4,8 @@ import Hero from "./components/Hero/Hero";
 import styled from "@emotion/styled";
 import {Tracks} from "./components/Tracks/Tracks";
 import {Promotion} from "./components/Promotion/Promotion";
+import {Testimonials} from "./components/Testimonials/Testimonials";
+import {Teachers} from "./components/Teachers/Teachers";
 
 const StyledContainer = styled.div`
   padding: 0;
@@ -17,6 +19,8 @@ function App() {
             <Hero/>
             <Tracks/>
             <Promotion/>
+            <Testimonials/>
+            <Teachers/>
         </StyledContainer>
     );
 }

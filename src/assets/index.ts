@@ -8,4 +8,7 @@ export const IMAGES = {
     track: require('../assets/images/track.png'),
     track2: require('../assets/images/track-2.png'),
     track3: require('../assets/images/track-3.png'),
+    teacher1: require('../assets/images/teacher-1.png'),
+    teacher2: require('../assets/images/teacher-2.png'),
+    teacher3: require('../assets/images/teacher-3.png'),
 }
