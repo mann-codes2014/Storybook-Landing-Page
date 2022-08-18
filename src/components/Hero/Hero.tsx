@@ -114,7 +114,7 @@ export const Hero = () => {
                     <StyledMissionStatement>Elearn is a global training provider based across the UK that specialises in
                         accredited and bespoke
                         training courses. We crush the...</StyledMissionStatement>
-                    <Input/>
+                    <Input buttonLabel="Continue"/>
                 </StyledSection>
                 <div>
                     <img className="layer3" src={IMAGES.heroBackgroundLayer3} alt=""/>

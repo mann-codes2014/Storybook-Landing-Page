@@ -3,15 +3,17 @@ import styled from "@emotion/styled";
 import {Button} from "./Button";
 import svg from '../assets/icons/magnifying-glass.svg'
 
-
-const StyledInputContainer = styled.div`
+type StyledInputContainerProps = {
+    isPlaceholderIcon: boolean;
+}
+const StyledInputContainer = styled.div<StyledInputContainerProps>`
   border-radius: 25px;
   padding: 5px;
   width: 100%;
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 20px 4fr 1fr;
+  grid-template-columns: ${props => (props.isPlaceholderIcon === true ? '20px 4fr 1fr' : '4fr 1fr')};
   gap: 5px;
   align-items: center;
   background-color: white;
@@ -31,15 +33,23 @@ const StyledInput = styled.input<any>`
   }
 
 `
-type InputProps={
-    placeholder?:string
+type InputProps = {
+    placeholder?: string;
+    isPlaceholderIcon?: boolean;
+    buttonLabel: string;
+    isPrimaryButton?: boolean
 }
-export const Input = ({placeholder='Search for a location...'}:InputProps) => {
+export const Input = ({
+                          placeholder = 'Search for a location...',
+                          isPlaceholderIcon = true,
+                          buttonLabel = 'Continue',
+                          isPrimaryButton = true
+                      }: InputProps) => {
     return (
-        <StyledInputContainer>
-            <StyledIcon src={svg}/>
+        <StyledInputContainer isPlaceholderIcon={isPlaceholderIcon}>
+            {isPlaceholderIcon && <StyledIcon src={svg}/>}
             <StyledInput type="text" placeholder={placeholder}/>
-            <Button label="Continue" primary/>
+            <Button label={buttonLabel} primary={isPrimaryButton}/>
         </StyledInputContainer>
     );
 }
