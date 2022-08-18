@@ -64,24 +64,15 @@ const StyledBody = styled.div`
   }
 `
 export type NewsletterSubscriptionProps = {
-    cover: string;
-    category: string;
-    rating: number;
-    title: string;
-    price: string;
-    duration: string;
-    numberOfCourses: string;
-    numberOfSales: string;
-
-
+    message?: string
 }
-export const NewsletterSubscription = ({}) => {
+export const NewsletterSubscription = ({message = 'Subscribe to our newsletter'}: NewsletterSubscriptionProps) => {
     return (
         <StyledNewsletterSubscription>
             {/*<div className="circle"></div>*/}
             <img className="bulb" src={bulb} alt=""/>
             <StyledBody>
-                <h4 className="heading">Subscribe to our newsletter</h4>
+                <h4 className="heading">{message}</h4>
                 <p className="description">Lorem Ipsum is simply dummy text of the printing.</p>
                 <div className="input">
                     <Input placeholder="Email Address" isPlaceholderIcon={false} buttonLabel="Send"

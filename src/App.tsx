@@ -7,6 +7,7 @@ import {Promotion} from "./components/Promotion/Promotion";
 import {Testimonials} from "./components/Testimonials/Testimonials";
 import {Teachers} from "./components/Teachers/Teachers";
 import {NewsletterSubscription} from "./components/NewsletterSubscription";
+import {Footer} from "./components/Footer";
 
 const StyledContainer = styled.div`
   padding: 0;
@@ -23,6 +24,7 @@ function App() {
             <Testimonials/>
             <Teachers/>
             <NewsletterSubscription/>
+            <Footer/>
         </StyledContainer>
     );
 }
