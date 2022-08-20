@@ -17,7 +17,7 @@ interface StyledButtonProps {
 const StyledButton = styled.button<StyledButtonProps>`
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 700;
-  border: 0;
+  border: 3px solid white;
   border-radius: 3em;
   cursor: pointer;
   display: inline-block;
@@ -29,21 +29,25 @@ const StyledButton = styled.button<StyledButtonProps>`
   height: 100%;
 
   &:hover {
-    outline: 3px solid ${props => (props.primary ? COLORS.PRIMARY : COLORS.SECONDARY)};
+    border: 3px solid ${props => (props.primary ? COLORS.PRIMARY : COLORS.SECONDARY)};
     background-color: white;
     color: ${props => (props.primary ? COLORS.PRIMARY : COLORS.SECONDARY)};
+    transition: background-color 350ms;
   }
 `
 export const Button = ({
                            primary = false,
                            size = 'medium',
                            label,
+                           onClick = () => {
+                           }
                        }: ButtonProps) => {
     return (
         <StyledButton
             type="button"
             primary={primary}
             size={size}
+            onClick={onClick}
         >
             {label}
         </StyledButton>

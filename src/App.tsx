@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Hero from "./components/Hero/Hero";
 import styled from "@emotion/styled";
 import {Tracks} from "./components/Tracks/Tracks";
@@ -8,6 +7,7 @@ import {Testimonials} from "./components/Testimonials/Testimonials";
 import {Teachers} from "./components/Teachers/Teachers";
 import {NewsletterSubscription} from "./components/NewsletterSubscription";
 import {Footer} from "./components/Footer";
+import {MediaContextProvider} from './components/media-context-provider';
 
 const StyledContainer = styled.div`
   padding: 0;
@@ -17,15 +17,17 @@ const StyledContainer = styled.div`
 
 function App() {
     return (
-        <StyledContainer>
-            <Hero/>
-            <Tracks/>
-            <Promotion/>
-            <Testimonials/>
-            <Teachers/>
-            <NewsletterSubscription/>
-            <Footer/>
-        </StyledContainer>
+        <MediaContextProvider>
+            <StyledContainer>
+                <Hero/>
+                {/*<Tracks/>*/}
+                {/*<Promotion/>*/}
+                {/*<Testimonials/>*/}
+                {/*<Teachers/>*/}
+                {/*<NewsletterSubscription/>*/}
+                {/*<Footer/>*/}
+            </StyledContainer>
+        </MediaContextProvider>
     );
 }
 

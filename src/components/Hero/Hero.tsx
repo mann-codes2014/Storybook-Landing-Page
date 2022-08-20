@@ -103,27 +103,27 @@ export const Hero = () => {
     return (
         <StyledContainer layer1={IMAGES.heroBackgroundLayer1} layer2={IMAGES.heroBackgroundLayer2}
                          layer3={IMAGES.heroBackgroundLayer3} layer4={IMAGES.heroBackgroundLayer4}>
-            <img className="layer1" src={IMAGES.heroBackgroundLayer1} alt=""/>
-            <img className="layer2" src={IMAGES.heroBackgroundLayer2} alt=""/>
-            <StyledBodyContainer>
-                <StyledSection>
-                    <StyledHeading>
-                        <span>The <span className="last">Smart</span></span>
-                        <span>Choice For <span className="last">Future</span></span>
-                    </StyledHeading>
-                    <StyledMissionStatement>Elearn is a global training provider based across the UK that specialises in
-                        accredited and bespoke
-                        training courses. We crush the...</StyledMissionStatement>
-                    <Input buttonLabel="Continue"/>
-                </StyledSection>
-                <div>
-                    <img className="layer3" src={IMAGES.heroBackgroundLayer3} alt=""/>
-                    <img className="layer4" src={IMAGES.heroBackgroundLayer4} alt=""/>
-                </div>
-            </StyledBodyContainer>
-            <StyledBannerContainer>
-                <Banner/>
-            </StyledBannerContainer>
+            {/*<img className="layer1" src={IMAGES.heroBackgroundLayer1} alt=""/>*/}
+            {/*<img className="layer2" src={IMAGES.heroBackgroundLayer2} alt=""/>*/}
+            {/*<StyledBodyContainer>*/}
+            {/*    <StyledSection>*/}
+            {/*        <StyledHeading>*/}
+            {/*            <span>The <span className="last">Smart</span></span>*/}
+            {/*            <span>Choice For <span className="last">Future</span></span>*/}
+            {/*        </StyledHeading>*/}
+            {/*        <StyledMissionStatement>Elearn is a global training provider based across the UK that specialises in*/}
+            {/*            accredited and bespoke*/}
+            {/*            training courses. We crush the...</StyledMissionStatement>*/}
+            {/*        <Input buttonLabel="Continue"/>*/}
+            {/*    </StyledSection>*/}
+            {/*    <div>*/}
+            {/*        <img className="layer3" src={IMAGES.heroBackgroundLayer3} alt=""/>*/}
+            {/*        <img className="layer4" src={IMAGES.heroBackgroundLayer4} alt=""/>*/}
+            {/*    </div>*/}
+            {/*</StyledBodyContainer>*/}
+            {/*<StyledBannerContainer>*/}
+            {/*    <Banner/>*/}
+            {/*</StyledBannerContainer>*/}
             <Navbar className={'navbar'}/>
         </StyledContainer>
     );
